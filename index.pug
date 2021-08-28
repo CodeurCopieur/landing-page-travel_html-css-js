@@ -31,6 +31,25 @@ html(lang="en")
 
     // main
     main.main
+      div 
+        div
+          //islands 1
+          each val, key in [{subtitle: 'Islands 1', title: 'Lorem, ipsum', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quae aliquid voluptas provident cumque quam', image: './assets/img/01.jpg'}, {subtitle: 'Islands 2', title: 'Lorem, ipsum', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quae aliquid voluptas provident cumque quam', image: './assets/img/02.jpg'}, {subtitle: 'Islands 3', title: 'Lorem, ipsum', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quae aliquid voluptas provident cumque quam', image: './assets/img/03.jpg'}]
+            section.islands
+              img(src= val.image, alt="").islands__bg
+              .islands__container.bd-container
+                .islands__data
+                  h2.islands__subtitle= val.subtitle
+                  h1.islands__title= val.title
+                  p.islands__description= val.description
+                  a.islands__button(href="#") Explore
+                    i.bx.bx-right-arrow-alt.uslands__button-icon
+
+                .islands__video
+                  .islands__video-content
+                    i.bx.bx-play-circle
+
+
 
 
     // GSAP
