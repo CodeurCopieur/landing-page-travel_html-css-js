@@ -27,11 +27,9 @@ $z-tooltip: 10;
 $z-fixed: 100;
 
 @media screen and (min-width: 1024px) {
-
   $biggest-font-size: 5.5rem;
   $big-font-size: 2rem;
   $normal-font-size: 1rem;
-
 }
 
 // Base
@@ -85,4 +83,47 @@ img {
   top: 0;
   left: 0;
   z-index: $z-fixed;
+
+  &-nav {
+    max-width: 968px;
+    height: $header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    &-nav__menu {
+      position: fixed;
+      top: 4rem;
+      left: 0;
+      right: 0;
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 1.5rem;
+      background-color: $first-color-lighter;
+      border-radius: 1rem;
+      transition: .4s;
+    }
+  }
+
+  &-nav__logo,
+  &-nav__toggle {
+    //color: $first-color-lighter;
+  }
+
+  .nav__link {
+    color: $title-color;
+    font-weight: $font-medium;
+  }
+
+  .nav__item {
+    margin-bottom: 1.5rem;
+  }
+
+  .nav__toggle {
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
 }
