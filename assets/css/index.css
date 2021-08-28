@@ -3,5 +3,29 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  text-decoration: none;
-  font-family: sans-serif; }
+  text-decoration: none; }
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.938rem;
+  background-color: #F5FFFE; }
+
+h1, h2, ul {
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.main {
+  position: relative; }
+
+.bd-container {
+  max-width: 968px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem; }

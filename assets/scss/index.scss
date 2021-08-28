@@ -1,10 +1,78 @@
 // GOOGLE FONTS
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+
+// variables css
+$header-height: 3rem;
+
+  // color css
+  $first-color: #26A69A;
+  $first-color-lighter: #EFF3F2;
+  $title-color:#11443F;
+  $text-color: #5B7B78;
+  $body-color: #F5FFFE;
+
+  // Font & Typographie
+  $body-font: 'Poppins', sans-serif;
+  $biggest-font-size: 3rem;
+  $big-font-size: 1.25rem;
+  $normal-font-size: .938rem;
+
+  // Font weight
+  $font-medium: 500;
+  $font-semi-bold: 600;
+
+  // z index
+  $z-tooltip: 10;
+  $z-fixed: 100;
+
+@media screen and (min-width: 1024px) {
+
+  $biggest-font-size: 5.5rem;
+  $big-font-size: 2rem;
+  $normal-font-size: 1rem;
+
+}
+
+// Base
+
 *, ::before, ::after {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
-  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: $body-font;
+  font-size: $normal-font-size;
+  background-color: $body-color;
+}
+
+h1, h2, ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+// Layout
+
+.main {
+  position: relative;
+}
+
+.bd-container {
+  max-width: 968px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
