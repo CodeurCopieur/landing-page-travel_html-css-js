@@ -1,5 +1,5 @@
 // GOOGLE FONTS
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600.headerdisplay=swap');
 
 
 // variables css
@@ -12,7 +12,7 @@ $title-color:#11443F;
 $text-color: #5B7B78;
 $body-color: #F5FFFE;
 
-// Font & Typographie
+// Font .header Typographie
 $body-font: 'Poppins', sans-serif;
 $biggest-font-size: 3rem;
 $big-font-size: 1.25rem;
@@ -83,47 +83,52 @@ img {
   top: 0;
   left: 0;
   z-index: $z-fixed;
+}
 
-  &-nav {
-    max-width: 968px;
-    height: $header-height;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.header-nav {
+  max-width: 968px;
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  @media screen and (max-width: 768px) {
-    &-nav__menu {
-      position: fixed;
-      top: 4rem;
-      left: 0;
-      right: 0;
-      width: 90%;
-      margin: 0 auto;
-      text-align: center;
-      padding-top: 1.5rem;
-      background-color: $first-color-lighter;
-      border-radius: 1rem;
-      transition: .4s;
-    }
+@media screen and (max-width: 768px) {
+  .header-nav__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 1.5rem;
+    background-color: $first-color-lighter;
+    border-radius: 1rem;
+    transition: .4s;
   }
+}
 
-  &-nav__logo,
-  &-nav__toggle {
-    //color: $first-color-lighter;
-  }
+.header-nav__logo,
+.header-nav__toggle {
+  //color: $first-color-lighter;
+}
 
-  .nav__link {
-    color: $title-color;
-    font-weight: $font-medium;
-  }
+.nav__link {
+  color: $title-color;
+  font-weight: $font-medium;
+}
 
-  .nav__item {
-    margin-bottom: 1.5rem;
-  }
+.nav__item {
+  margin-bottom: 1.5rem;
+}
 
-  .nav__toggle {
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
+.nav__toggle {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+// show menu
+.show-menu {
+  top: $header-height + 1rem;
 }

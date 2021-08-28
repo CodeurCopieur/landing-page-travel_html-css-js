@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600.headerdisplay=swap");
 *, ::before, ::after {
   margin: 0;
   padding: 0;
@@ -36,38 +36,46 @@ img {
   top: 0;
   left: 0;
   z-index: 100; }
-  .header-nav {
-    max-width: 968px;
-    height: 3rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-  @media screen and (max-width: 768px) {
-    .header-nav__menu {
-      position: fixed;
-      top: 4rem;
-      left: 0;
-      right: 0;
-      width: 90%;
-      margin: 0 auto;
-      text-align: center;
-      padding-top: 1.5rem;
-      background-color: #EFF3F2;
-      border-radius: 1rem;
-      -webkit-transition: .4s;
-      -o-transition: .4s;
-      transition: .4s; } }
-  .header .nav__link {
-    color: #11443F;
-    font-weight: 500; }
-  .header .nav__item {
-    margin-bottom: 1.5rem; }
-  .header .nav__toggle {
-    font-size: 1.2rem;
-    cursor: pointer; }
+
+.header-nav {
+  max-width: 968px;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+@media screen and (max-width: 768px) {
+  .header-nav__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 1.5rem;
+    background-color: #EFF3F2;
+    border-radius: 1rem;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s; } }
+
+.nav__link {
+  color: #11443F;
+  font-weight: 500; }
+
+.nav__item {
+  margin-bottom: 1.5rem; }
+
+.nav__toggle {
+  font-size: 1.2rem;
+  cursor: pointer; }
+
+.show-menu {
+  top: 4rem; }
