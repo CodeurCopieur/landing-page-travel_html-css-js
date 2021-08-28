@@ -29,3 +29,10 @@ img {
   max-width: 968px;
   margin-left: 1.5rem;
   margin-right: 1.5rem; }
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100; }
