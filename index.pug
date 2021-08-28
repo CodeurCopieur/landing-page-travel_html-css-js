@@ -17,14 +17,20 @@ html(lang="en")
   body
 
     // HEADER
-    header.component__header
-      nav.component__nav.bd-container
-        a.component__nav-logo(href="") Travel
-        .component__nav-menu#nav-menu
-          ul.component__nav-list
+    header.header
+      nav.header-nav.bd-container
+        a.header-nav__logo(href="") Travel
+        .header-nav__menu#nav-menu
+          ul.header-nav__list
             each val, i in ['Home', 'Explore','Destinations', 'Hotels']
-              li.nav-item
-                a.nav-link(href="#")=val 
+              li.nav__item
+                a.nav__link(href="#")=val
+
+        .header-nav__toggle#nav-toggle
+          i.bx.bx-menu
+
+    // main
+    main.main
 
 
     // GSAP
