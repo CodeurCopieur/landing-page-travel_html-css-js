@@ -141,7 +141,6 @@ img {
   position: relative;
 }
 
-
 .islands__bg {
   position: absolute;
   top: 0;
@@ -217,6 +216,7 @@ img {
 }
 
 .islands__popup {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -239,5 +239,34 @@ img {
   cursor: pointer;
 }
 
-
 // Show Popup
+
+.show-popup {
+  display: block;
+}
+
+// Controls
+.controls__img {
+  width: 35px;
+  height: 35px;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.controls {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: .25rem .5rem;
+  background-color: $first-color-lighter;
+  border-radius: .75rem;
+  z-index: $z-tooltip;
+  overflow: hidden;
+}
+
+.controls__container {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
