@@ -11,4 +11,22 @@ const showMenu = (toggleId, menuId)=> {
   }
 }
 
-showMenu('nav-toggle', 'nav-menu')
+showMenu('nav-toggle', 'nav-menu');
+
+
+/* POPUP */
+const btnOpenVideo = document.querySelectorAll('.islands__video-content'),
+      btnCloseVideo = document.getElementById('popup-close'),
+      islandsPopup = document.getElementById('popup');
+      
+
+function popup() {
+  islandsPopup.classList.add('show-popup');
+}
+
+btnOpenVideo.forEach( b => b.addEventListener('click', popup));
+btnCloseVideo.addEventListener('click', ()=> {
+  islandsPopup.classList.remove('show-popup');
+})
+
+// CONTROLS
