@@ -43,12 +43,18 @@ html(lang="en")
                   h1.islands__title= val.title
                   p.islands__description= val.description
                   a.islands__button(href="#") Explore
-                    i.bx.bx-right-arrow-alt.uslands__button-icon
+                    i.bx.bx-right-arrow-alt.islands__button-icon
 
                 .islands__video
                   .islands__video-content
-                    i.bx.bx-play-circle
+                    i.bx.bx-play-circle.islands__video-icon
+          
 
+          .islands__popup#popup
+            div 
+               .islands__popup-close#popup-close
+                 i.bx.bx-x
+               iframe(class="islands__popup-video" src="https://www.youtube.com/embed/6GBVaHH_6bQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
 
 
 
