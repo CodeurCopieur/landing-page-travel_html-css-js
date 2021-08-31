@@ -9,7 +9,8 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   font-size: 0.938rem;
-  background-color: #F5FFFE; }
+  background-color: #F5FFFE;
+  color: #5B7B78; }
 
 h1, h2, ul {
   padding: 0;
@@ -66,6 +67,10 @@ img {
     -o-transition: .4s;
     transition: .4s; } }
 
+.header-nav__logo,
+.header-nav__toggle {
+  color: #EFF3F2; }
+
 .nav__link {
   color: #11443F;
   font-weight: 500; }
@@ -79,3 +84,107 @@ img {
 
 .show-menu {
   top: 4rem; }
+
+.islands {
+  height: 100vh;
+  position: relative; }
+
+.islands__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center; }
+
+.islands__container {
+  position: relative;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr .25fr;
+  grid-template-columns: 2fr .25fr;
+  -ms-flex-line-pack: center;
+  align-content: center; }
+
+.islands__subtitle, .islands__title, .islands__description {
+  color: #EFF3F2; }
+
+.islands__subtitle {
+  font-size: 1.25rem;
+  font-weight: 500; }
+
+.islands__title {
+  font-size: 3rem; }
+
+.islands__description {
+  margin-bottom: 1rem; }
+
+.islands__button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #EFF3F2;
+  color: #26A69A;
+  border-radius: .5rem;
+  font-weight: 500; }
+  .islands__button:hover {
+    background-color: #F5FFFE; }
+
+.islands__button-icon {
+  font-size: 1.5rem;
+  margin-left: .5rem; }
+
+.islands__video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding-bottom: .75rem; }
+
+.islands__video-content {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: .15rem;
+  cursor: pointer;
+  background-color: #EFF3F2;
+  border-radius: 50%; }
+
+.islands__video-icon {
+  font-size: 1.8rem;
+  color: #26A69A; }
+
+.islands__popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #EFF3F2;
+  padding: 1rem .75rem;
+  border-radius: 1rem; }
+
+.islands__popup-close {
+  position: absolute;
+  top: -.75rem;
+  right: -.75rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: .35rem;
+  background-color: #26A69A;
+  color: #EFF3F2;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  cursor: pointer; }

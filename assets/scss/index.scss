@@ -46,6 +46,7 @@ body {
   font-family: $body-font;
   font-size: $normal-font-size;
   background-color: $body-color;
+  color: $text-color;
 }
 
 h1, h2, ul {
@@ -111,7 +112,7 @@ img {
 
 .header-nav__logo,
 .header-nav__toggle {
-  //color: $first-color-lighter;
+  color: $first-color-lighter;
 }
 
 .nav__link {
@@ -128,7 +129,115 @@ img {
   cursor: pointer;
 }
 
-// show menu
+// Show menu
 .show-menu {
   top: $header-height + 1rem;
 }
+
+
+// Islands
+.islands {
+  height: 100vh;
+  position: relative;
+}
+
+
+.islands__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.islands__container {
+  position: relative;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr .25fr;
+  align-content: center;
+}
+
+.islands__subtitle, .islands__title, .islands__description {
+  color: $first-color-lighter;
+}
+
+.islands__subtitle {
+  font-size: $big-font-size;
+  font-weight: $font-medium;
+}
+
+.islands__title {
+  font-size: $biggest-font-size;
+}
+
+.islands__description {
+  margin-bottom: 1rem;
+}
+
+.islands__button {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: $first-color-lighter;
+  color: $first-color;
+  border-radius: .5rem;
+  font-weight: $font-medium;
+
+  &:hover {
+    background-color: $body-color;
+  }
+}
+
+
+.islands__button-icon {
+  font-size: 1.5rem;
+  margin-left: .5rem;
+}
+
+.islands__video {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: .75rem;
+}
+
+.islands__video-content {
+  display: inline-flex;
+  padding: .15rem;
+  cursor: pointer;
+  background-color: $first-color-lighter;
+  border-radius: 50%;
+}
+
+.islands__video-icon {
+  font-size: 1.8rem;
+  color: $first-color;
+}
+
+.islands__popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $first-color-lighter;
+  padding: 1rem .75rem;
+  border-radius: 1rem;
+}
+
+.islands__popup-close {
+  position: absolute;
+  top: -.75rem;
+  right: -.75rem;
+  display: inline-flex;
+  padding: .35rem;
+  background-color: $first-color;
+  color: $first-color-lighter;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+// Show Popup
