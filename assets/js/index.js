@@ -54,6 +54,7 @@ function scrollAnimation() {
       duration: .2,
       delay: .2,
       y: -20,
+      ease: "power2.out",
       stagger: {
         amount: 1.5
       }
