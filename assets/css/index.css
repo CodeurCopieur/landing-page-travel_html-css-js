@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600.headerdisplay=swap");
 *, ::before, ::after {
   margin: 0;
@@ -229,3 +230,76 @@ img {
   -webkit-transition: .4s ease-out;
   -o-transition: .4s ease-out;
   transition: .4s ease-out; }
+
+/* Media queries */
+@media screen and (max-width: 320px) {
+  .bd-container {
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  .controls__container {
+    -webkit-column-gap: .25rem;
+    column-gap: .25rem; }
+  .islands__popup-video {
+    width: 230px;
+    height: 100px; } }
+
+@media screen and (min-width: 768px) {
+  .header-nav {
+    height: 4.5rem; }
+  .header-nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .nav__item {
+    margin-right: 2rem;
+    margin-bottom: 0; }
+  .nav__link {
+    color: #EFF3F2; }
+  .header-nav__toggle {
+    display: none; }
+  .islands__container {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr); }
+  .islands__description {
+    padding-right: 5rem;
+    margin-bottom: 2rem; }
+  .islands__video {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0; }
+  .islands__video-icon {
+    font-size: 3rem; }
+  .islands__popup-video {
+    width: 500px;
+    height: 250px; }
+  .islands__popup-close {
+    font-size: 1.5rem; }
+  .controls {
+    padding: 0.5rem;
+    border-radius: 1.25rem; }
+  .controls__container {
+    -webkit-column-gap: 1.5rem;
+    column-gap: 1.5rem; }
+  .controls__img {
+    width: 45px;
+    height: 45px;
+    border-radius: .75rem; }
+  .swiper-slide-thumb-active {
+    width: 55px;
+    height: 55px; } }
+
+@media screen and (min-width: 1024px) {
+  .bd-container {
+    margin-left: auto;
+    margin-right: auto; }
+  .islands__description {
+    padding-right: 11rem; } }
+
+/* Pour les grands écrans mobiles et desktop */
+@media screen and (min-height: 721px) {
+  .islands {
+    height: 640px; } }
