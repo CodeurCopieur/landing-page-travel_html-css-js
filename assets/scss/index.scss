@@ -270,3 +270,11 @@ img {
   align-items: center;
   column-gap: 1rem;
 }
+
+/* Active controls */
+
+.swiper-slide-thumb-active {
+  width: 45px;
+  height: 45px;
+  transition: .4s ease-out;
+}
