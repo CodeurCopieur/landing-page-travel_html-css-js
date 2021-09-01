@@ -42,4 +42,28 @@ btnCloseVideo.addEventListener('click', ()=> {
   islandsPopup.classList.remove('show-popup');
 })
 
-// CONTROLS
+/* GSAP Animation */
+
+const controlsImg = document.querySelectorAll('.controls__img');
+
+function scrollAnimation() {
+  gsap.from(
+    '.test1, .test2, .test3, .test4, .test5', 
+    {
+      opacity: 0,
+      duration: .2,
+      delay: .2,
+      y: -20,
+      stagger: {
+        amount: 1.5
+      }
+    }, "-=.5");
+
+    if(islandsPopup.classList.contains('show-popup')){
+      islandsPopup.classList.remove('show-popup');
+    }
+    
+}
+
+
+controlsImg.forEach( img => img.addEventListener('click', scrollAnimation))
