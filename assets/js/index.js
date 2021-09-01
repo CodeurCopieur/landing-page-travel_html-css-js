@@ -51,7 +51,7 @@ function scrollAnimation() {
     '.test1, .test2, .test3, .test4, .test5', 
     {
       opacity: 0,
-      duration: .2,
+      duration: 1,
       delay: .2,
       y: -20,
       ease: "power2.out",
