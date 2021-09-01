@@ -13,6 +13,19 @@ const showMenu = (toggleId, menuId)=> {
 
 showMenu('nav-toggle', 'nav-menu');
 
+/* SWIPER JS */
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 0,
+  slidesPerView: 0
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  effect: 'fade',
+  loop: true,
+  thumbs: {
+    swiper: swiper,
+  },
+});
+
 
 /* POPUP */
 const btnOpenVideo = document.querySelectorAll('.islands__video-content'),

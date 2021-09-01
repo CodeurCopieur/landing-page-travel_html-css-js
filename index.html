@@ -29,10 +29,13 @@
     </header>
     <!-- main-->
     <main class="main">
-      <div> 
-        <div>
+      <!-- Slider main container-->
+      <div class="swiper mySwiper2">
+        <!-- Additional required wrapper-->
+        <div class="swiper-wrapper">
           <!-- Islands-->
-          <section class="islands"><img class="islands__bg" src="./assets/img/01.jpg" alt="">
+          <!-- Slides -->
+          <section class="islands swiper-slide"><img class="islands__bg" src="./assets/img/01.jpg" alt="">
             <div class="islands__container bd-container">
               <div class="islands__data">
                 <h2 class="islands__subtitle">Islands 1</h2>
@@ -44,7 +47,8 @@
               </div>
             </div>
           </section>
-          <section class="islands"><img class="islands__bg" src="./assets/img/02.jpg" alt="">
+          <!-- Slides -->
+          <section class="islands swiper-slide"><img class="islands__bg" src="./assets/img/02.jpg" alt="">
             <div class="islands__container bd-container">
               <div class="islands__data">
                 <h2 class="islands__subtitle">Islands 2</h2>
@@ -56,7 +60,8 @@
               </div>
             </div>
           </section>
-          <section class="islands"><img class="islands__bg" src="./assets/img/03.jpg" alt="">
+          <!-- Slides -->
+          <section class="islands swiper-slide"><img class="islands__bg" src="./assets/img/03.jpg" alt="">
             <div class="islands__container bd-container">
               <div class="islands__data">
                 <h2 class="islands__subtitle">Islands 3</h2>
@@ -75,11 +80,11 @@
               <iframe class="islands__popup-video" src="https://www.youtube.com/embed/6GBVaHH_6bQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
-          <!-- CONTROLS-->
-          <div class="controls">
-            <div class="controls__container"><img class="controls__img" src="./assets/img/01.jpg" alt=""><img class="controls__img" src="./assets/img/02.jpg" alt=""><img class="controls__img" src="./assets/img/03.jpg" alt="">
-            </div>
-          </div>
+        </div>
+      </div>
+      <!-- CONTROLS-->
+      <div class="controls mySwiper">
+        <div class="controls__container swiper-wrapper"><img class="controls__img swiper-slide" src="./assets/img/01.jpg" alt=""><img class="controls__img swiper-slide" src="./assets/img/02.jpg" alt=""><img class="controls__img swiper-slide" src="./assets/img/03.jpg" alt="">
         </div>
       </div>
     </main>
